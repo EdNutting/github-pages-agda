@@ -21,6 +21,7 @@ Template repo demonstrating Literate Agda Markdown with Github Pages (/Jekyll)
     1. Literate Agda Markdown files are compiled to `./agda` directory in your website by default.
 1. You will want to customise `./_docker/run.sh` to match your website's needs.
 1. Create your website - don't forget to edit the Jekyll config: `_config.yml`
+    1. Any folders you create you will probably want to add to `.dockerignore` to make sure Docker doesn't try to use them.
 1. Run `./_docker/build` to build your site's Docker image.
     * If this fails, first try increasing the RAM limit for Docker in Docker settings. (This does not apply on Linux).
 1. Run `./_docker/test` to build your website locally using the Docker image you just built.
