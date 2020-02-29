@@ -8,4 +8,4 @@ layout: default
 # The home page
 
 {% comment %}Note: This link goes to the compiled Markdown file, not the source!{% endcomment %}
-An example [compiled lagda file here]({% link agda/simple.md %}).
+An example [compiled lagda file here]({{ "/agda/simple.md" | relative_url }}).

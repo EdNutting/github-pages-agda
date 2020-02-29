@@ -16,9 +16,11 @@ COPY --from=agda  /agda/.stack-work/install /agda/.stack-work/install
 COPY --from=agda /root/.local/bin/agda /root/.local/bin/agda
 
 # Extend the Jekyll setup
-ADD Gemfile /host/Gemfile
-ADD Gemfile.lock /host/Gemfile.lock
 
 RUN gem install bundler
 RUN bundle config set path '/'
+
+ADD Gemfile /host/Gemfile
+ADD Gemfile.lock /host/Gemfile.lock
+
 RUN cd /host/ && bundle install

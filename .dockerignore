@@ -9,6 +9,7 @@ _agda
 .git
 .github
 .jekyll-cache
+assets
 css
 images
 agda
