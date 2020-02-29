@@ -12,9 +12,9 @@ Template repo demonstrating Literate Agda Markdown with Github Pages (/Jekyll)
 1. Make sure Github Pages is enabled in your repo's settings on Github.
     1. Ensure the site is using the `master` branch as the source of the site's content.
         * This is the only option for personal sites on Github Pages.
-        * Other options for project sites can be configured - just remember to modify the `workflows/jekyll.yml` file accordingly.
+        * Other options for project sites can be configured - just remember to modify the `./github/jekyll.yml` file accordingly.
 1. Set up the environment variables as set out below.
-1. Set up `workflows/jekyll.yml` as per note in *Environment variables* below.
+1. Set up `/github/workflows/jekyll.yml` as per note in *Environment variables* below.
 1. This templates puts `*.lagda.md` files in `./_agda`
     1. You can specify a `layout` in front-matter of these `lagda` files and it will be passed through to Jekyll.
     1. Literate Agda Markdown files are built with `--safe` by default (change in `./_docker/run.sh`)
@@ -40,7 +40,7 @@ Set the following values as environment variables when using the scripts in `_do
 | `dockerRepo` | The name of the repository to use for your website's build image. | `personal-website` |
 | `workspaceFolder` | The absolute path to the directory of your Jekyll site (no trailing `/`). See note below re. VSCode. | `/home/ed/github-pages-agda` |
 
-**Important:** When you change `dockerUsername` and `dockerRepo`, you must manually change them in `workflows/jekyll.yml`.
+**Important:** When you change `dockerUsername` and `dockerRepo`, you must manually change them in `/github/workflows/jekyll.yml`.
 
 ## VSCode
 
