@@ -1,0 +1,23 @@
+# Directories
+_drafts
+_includes
+_layouts
+_posts
+_sass
+_site
+_agda
+.git
+.github
+.jekyll-cache
+css
+images
+agda
+
+# Files
+_config.yml
+.dockerignore
+.gitignore
+*.html
+*.md
+*.agdai
+*~
