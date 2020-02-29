@@ -4,7 +4,9 @@
 # which is built upon Alpine Linux.
 
 ARG JEKYLL_BASE_IMAGE=jekyll/builder:latest
-ARG JEKYLL_AGDA_IMAGE=ednutting/jekyll-agda:latest
+# AGDA_VERSION e.g. latest, 2.6.0.1
+ARG AGDA_VERSION=latest
+ARG JEKYLL_AGDA_IMAGE=ednutting/jekyll-agda:$AGDA_VERSION
 
 FROM $JEKYLL_AGDA_IMAGE as agda
 FROM $JEKYLL_BASE_IMAGE

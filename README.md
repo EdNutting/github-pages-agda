@@ -53,10 +53,12 @@ Template repo demonstrating Literate Agda Markdown with Github Pages (/Jekyll)
 1. Customise `./_docker/run.sh` to match your needs.
 1. Run `./_docker/build` to build your site's Docker image.
     * If this fails, first try increasing the RAM limit for Docker in Docker settings. (This does not apply on Linux).
-    * By default, this inherits from [EdNutting's Jekyll-Agda image](https://github.com/EdNutting/docker-jekyll-agda)
-        * At the moment, this uses the latest `master` version from whatever time the image was built.
-        * In future, tagged versions of Agda will be made available.
-            * In the meantime, if you really need a particular Agda version, you clone [the repo](https://github.com/EdNutting/docker-jekyll-agda) and build your own Jekyll-Agda Docker Image to get the version of Agda you need.
+    * By default, this inherits from [the `latest` tag of EdNutting's Jekyll-Agda image](https://github.com/EdNutting/docker-jekyll-agda)
+        * At the moment, this will mean the latest release of Agda.
+            * Other tags are available for other versions of Agda e.g. `2.6.0.1 `
+                * See the list of tags [on the Docker Hub](https://hub.docker.com/repository/docker/ednutting/jekyll-agda).
+                * Use the `AGDA_VERSION` argument in the Dockerfile to configure the Agda version you want to use.
+                * If you need a version not currently available, you should clone [the Jekyll-Agda repo](https://github.com/EdNutting/docker-jekyll-agda) and build your own image - or create an issue on the Jekyll-Agda repo requesting the version you need.
         * Do this after you've got your basic site working.
 1. Run `./_docker/test` to build your website locally using the Docker image you just built.
     1. Check the `./_site` directory to see whether your files built properly.
@@ -84,7 +86,7 @@ Set the following values as environment variables when using the scripts in `./_
 
 Note: `workspaceFolder` derives from the VSCode variable of the same name. In your VSCode global settings, you can use the following to pass the `workspaceFolder` variable from the integrated terminal to the docker script (restart any integrated terminals after changing), as well as the other environment vars.
 
-```json
+```js
 {
     // ...other settings...
     "terminal.integrated.env.linux": {
