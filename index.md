@@ -7,4 +7,4 @@ layout: default
 
 # The home page
 
-An example [compiled lagda file here]({% link /_agda/simple %}).
+An example [compiled lagda file here]({% link /_agda/simple.lagda.md %}).
