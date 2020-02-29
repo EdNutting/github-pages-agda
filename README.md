@@ -13,7 +13,7 @@ Template repo demonstrating Literate Agda Markdown with Github Pages (/Jekyll)
         * Don't clone or fork this repo directly - it's a template - copy stuff from it.
         * Include a note somewhere in your repo that it's based off this template - as per the included MIT license.
     1. You will need a Docker Hub account.
-    1. You may need to log into Docker Hub before using the Docker `push` command/script. On the command line: `docker login`. On Windows, you can also sign in using the Docker Settings app from the notification tray.
+    1. You may need to login to Docker Hub before using the Docker `push` command/script. On the command line: `docker login`. On Windows, you can also sign in using the Docker Settings app from the notification tray.
 1. Make sure you are on a branch called `develop`
     1. `git branch develop && git checkout develop`
     1. The Github Actions workflow only runs for commits to `develop`. You can configure this - but make sure it never, ever runs for commits to `master` or *all the bad things will happen*.
