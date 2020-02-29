@@ -7,4 +7,5 @@ layout: default
 
 # The home page
 
-An example [compiled lagda file here]({% link /_agda/simple.lagda.md %}).
+{% comment %}Note: This link goes to the compiled Markdown file, not the source!{% endcomment %}
+An example [compiled lagda file here]({% link agda/simple.md %}).
