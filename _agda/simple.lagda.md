@@ -1,5 +1,5 @@
 ---
-layout: agda
+layout: default
 ---
 
 This is a test Agda Markdown file.

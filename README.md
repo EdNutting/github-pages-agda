@@ -20,7 +20,9 @@ Template repo demonstrating Literate Agda Markdown with Github Pages (/Jekyll)
     1. Literate Agda Markdown files are built with `--safe` by default (change in `./_docker/run.sh`)
     1. Literate Agda Markdown files are compiled to `./agda` directory in your website by default.
 1. You will want to customise `./_docker/run.sh` to match your website's needs.
+1. Create your website - don't forget to edit the Jekyll config: `_config.yml`
 1. Run `./_docker/build` to build your site's Docker image.
+    * If this fails, first try increasing the RAM limit for Docker in Docker settings. (This does not apply on Linux).
 1. Run `./_docker/test` to build your website locally using the Docker image you just built.
     1. Check the `./_site` directory to see whether your files built properly.
 1. If everything worked OK, run `./_docker/push` to push your Docker build image to Docker hub.
@@ -40,7 +42,7 @@ Set the following values as environment variables when using the scripts in `_do
 | `dockerRepo` | The name of the repository to use for your website's build image. | `personal-website` |
 | `workspaceFolder` | The absolute path to the directory of your Jekyll site (no trailing `/`). See note below re. VSCode. | `/home/ed/github-pages-agda` |
 
-**Important:** When you change `dockerUsername` and `dockerRepo`, you must manually change them in `/github/workflows/jekyll.yml`.
+**Important:** When you change `dockerUsername` and `dockerRepo`, you must manually change them in `/github/workflows/jekyll.yml`. A comment in that file explains.
 
 ## VSCode
 
