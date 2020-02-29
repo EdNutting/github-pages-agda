@@ -1,4 +1,4 @@
-# github-pages-agda
+# Agda on Github Pages
 
 Template repo demonstrating Literate Agda Markdown with Github Pages (/Jekyll)
 
