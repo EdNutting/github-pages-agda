@@ -39,6 +39,7 @@ Template repo demonstrating Literate Agda Markdown with Github Pages (/Jekyll)
         * This is the only option for personal sites on Github Pages.
         * Other options for project sites can be configured - just remember to modify the `./github/jekyll.yml` file accordingly.
 1. Set up the [environment variables as set out below](#environment-variables).
+    * You will need to [create the Docker repo](https://hub.docker.com/repository/create) in Docker Hub with the same name that you use in `dockerRepo`.
 1. Set up `/github/workflows/jekyll.yml` as per note in *Environment variables* below.
 1. This templates puts `*.lagda.md` files in `./_agda`
     * An example is provided in `./_agda/simple.lagda.md`
