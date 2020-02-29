@@ -10,7 +10,7 @@ layout: default
 This template demonstrates how to integrate Agda with Github Pages to automatically compile
 Literate Agda Markdown files for inclusion in the website.
 
-[Use/get the template here](https://ednutting.github.io/github-pages-agda/)
+[Use/get the template here](https://github.com/EdNutting/github-pages-agda/)
 
 ## *Prove* it works
 
